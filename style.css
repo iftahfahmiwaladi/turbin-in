@@ -1,0 +1,166 @@
+*{
+   box-sizing: border-box;
+} 
+body{
+   margin: 0;
+   font-family: "Lucida Grande";
+
+}
+.btn:hover{
+    color:#112B3C;
+    background-color: beige;
+    opacity: 1;
+}
+a{
+   text-decoration: none;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+    cursor: pointer;
+}
+.logo-huruf{
+    font-size: 20px;
+    cursor: pointer;
+}
+header{
+    height: 65px;
+    width: 100%;
+    background-color: #112B3C;
+    position :fixed;
+    top: 0;
+    z-index: 10;
+    opacity: 0.9;
+}
+.header-left{
+    float: left;
+}
+.simulasi-left{
+    float: left;
+}
+.header-left span{
+    line-height: 60px;
+    padding : 0 20px;
+    color: white;
+    font-weight: bold;
+}  
+.header-right{
+    float: right;
+    margin-right: -25px;
+}
+.simulasi-right{
+    float: right;
+    margin-right: -25px;
+}
+.header-right a{
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+.header-right a:hover{
+    background-color: #205375;
+    opacity: 1;
+}
+.top-wrapper{
+    padding: 180px 0 100px 0;
+    background-image: url(https://images.unsplash.com/photo-1562519990-50eb51e282b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2luZCUyMHR1cmJpbmV8ZW58MHx8MHx8&w=1000&q=80);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.top-wrapper h1{
+    opacity: 0.8;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}  
+.top-wrapper p{
+    opacity: 0.7;
+    margin-bottom: 3px;
+}
+.btn-wrapper{
+    text-align: center;
+    margin: 20px 0;
+}  
+.btn-wrapper p{
+    margin: 12px 0;
+}
+.signup {
+    background-color: #239b76;
+}
+.facebook {
+    background-color: #3b5998;
+    margin-right: 10px;
+}
+.twitter {
+    background-color: #55acee;
+}  
+.btn{
+    color: white;
+    padding: 12px 24px;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+}
+.fa {
+    margin-right: 8px;
+}
+.turbines, .simulasi-wrapper{
+    text-align: center;
+}
+.turbine{
+    padding:20px;
+    float: left;
+    position: relative;
+    width: 50%;
+}
+.turbine img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: contrast(80%);  
+}
+.turbines h2{
+    padding: 20px;
+}
+.simulasi-wrapper h2{
+    padding: 30px;
+}
+
+#map{
+    padding:20px;
+    height: 400px;width: 100%;
+}
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 0;
+    background-color: #205375;
+    overflow: hidden;
+    width: 93%;
+    height: 0;
+    transition: .5s ease;
+    opacity:0.7;
+  }
+.turbine:hover .overlay {
+    height: 50%;
+  } 
+.description{
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Document</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.css" integrity="sha512-CB+XYxRC7cXZqO/8cP3V+ve2+6g6ynOnvJD6p4E4y3+wwkScH9qEOla+BTHzcwB4xKgvWn816Iv0io5l3rAOBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <a class="logo-huruf"><img class="logo" src="logo1.png" alt=""><span>TURBIN-IN</span></a>
+            </div>
+            <div class="header-right">
+                <a href="#">Produk</a>
+                <a href="#">Simulasi Daya</a>
+                <a href="#" class="login">Pemesanan</a>
+            </div>
+        </div>
+    </header>
+    <div class="top-wrapper">
+        <div class="container">
+          <h1>TURBIN-IN.</h1>
+          <h1>MEMBERIKAN SOLUSI ENERGI RAMAH LINGKUNGAN.</h1>
+          <p>Turbin In adalah platform yang menawarkan jual beli turbin angin.</p>
+          <p>Kami menawarkan desain yang cocok untuk lokasi anda dan perkiraan dayanya.</p>
+          <div class="btn-wrapper">
+            <a href="#" class="btn signup">Daftar dengan Email</a>
+            <p>atau</p>
+            <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Daftar dengan Facebook</a>
+            <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Daftar dengan Twitter</a>
+          </div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+          <div class="turbines">
+            <h2>Produk</h2>
+            <div class="turbine">
+                <img src="https://static.wixstatic.com/media/36b4df_dbfa00e8a6e748ed9a88b0eca5e530e9~mv2.png/v1/fill/w_1000,h_464,al_c,usm_0.66_1.00_0.01/36b4df_dbfa00e8a6e748ed9a88b0eca5e530e9~mv2.png" alt="">
+                <div class="overlay">
+                    <div class="description">Vertical Axis Wind Turbine (VAWT) merupakan turbin angin sumbu tegak yang gerakan poros dan rotor sejajar dengan arah angin, sehingga rotor dapat berputar pada semua arah angin. Ada tiga tipe rotor pada turbin angin jenis ini, yaitu: Savonius, Darrieus, dan H rotor. Turbin Savonius memanfaatkan gaya drag sedangkan Darrieus dan H rotor memanfaatkan gaya lift.</div>
+                </div>
+            </div>
+            <div class="turbine">
+                <img src="https://windfacts.ca/wp-content/uploads/2022/03/pexels-pixabay-414837-scaled-1-e1646573479463.jpg" alt="">
+                <div class="overlay">
+                    <div class="description">Horizontal Axial Wind Turbine (HAWT) merupakan turbin  yang poros utamanya berputar menyesuaikan arah angin. Agar rotor dapat berputar dengan baik, arah angin harus sejajar dengan poros turbin dan tegak lurus terhadap arah putaran rotor.Biasanya turbin jenis ini memiliki blade berbentuk airfoil seperti bentuk sayap pada pesawat</div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section>
+        <div class="container pb-5">
+            <div class="simulasi-wrapper pb-5">
+                <h2>Simulasi Daya</h2>
+                <div id="map"></div>
+            </div>       
+            <div class="simulasi-left">
+                <p>Asumsi : </p>
+                <p>Desain Sudu Turbin = 53 m</p>
+                <p>Nilai Massa Jenis Udara = 1.2 Kg/cm3</p>
+                <p>Koeffisien Power = 0.4</p>
+            </div>
+            <div id="hasil_perkiraan" class="simulasi-right">
+                <p id="lokasi">Lokasi = N/A</p>
+                <p id="tanggal">Tanggal = N/A</p>
+                <p id="temperature">Temperature = N/A</p>
+                <p id="kecepatan_angin">Kecepatan Angin = N/A</p>
+                <p id="daya_dihasilkan">Daya yang dihasilkan = N/A</p>
+            </div>
+        </div>
+    </section>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl1eGbG87HrfIWjMTDG8V2l3npj4SnxrE&callback=initMap&v=weekly"defer></script>
+    <script>
+	
+    </script>
+    
+</body>
+</html>
